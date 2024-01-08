@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/* Styles for the video card container */
+.itemCard {
+  max-width: 300px; /* Set the maximum width as needed */
+  margin: 20px; /* Add margin for spacing between cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  border-radius: 8px; /* Add rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for the video thumbnail */
+#thumbnail {
+  width: 312px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+/* Styles for the card bottom section */
+.cardBottom {
+  padding: 10px;
+}
+
+/* Styles for the card title section */
+.cardTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+/* Styles for the profile picture */
+#profilePic {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+
+/* Styles for the title text */
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Styles for the author information */
+.id {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Styles for the verified icon */
+.verify {
+  display: flex;
+}
+
+#verifiedIcon {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  padding-left: 10px;
+}
+
+/* Styles for the views information */
+.views {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+button {
+  background-color: rgb(216, 205, 205);
+  border-radius: 5px;
+  padding: 6px 12px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ea0f0f;
+  color: white;
+}
+
+/* page2 */
+.accordion {
+  padding: 50px;
+  margin: auto;
+}
+
+.sort-btn {
+  margin-left: -50px;
+}
+
+.nav-btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tooltip::before,
+.tooltip::after {
+  /* Your pseudo-element styling goes here */
+  content: ''; /* This is just a placeholder; replace it with your actual styling */
+}
+
+.tooltip {
+  /* Your container styling goes here */
+  position: relative; /* Make the container a positioned context for pseudo-elements */
+}

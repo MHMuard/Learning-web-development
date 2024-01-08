@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PH Tube</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <img src="./img/Logo.png" alt="phtube" />
+      <div id="sort-container" class="tooltip tooltip-bottom" data-tip="Highest to Lowest">
+        <button id="sort-by" class="sort-btn" onclick="handleSort()">Sort by view</button>
+      </div>      
+      <a href="./page2.html"><button>Blog</button></a>
+    </div>
+    <hr />
+    <div class="filter">
+      <button onclick="loadData(1000)" class="nav-btn">All</button>
+      <button onclick="loadData(1001)" class="nav-btn">Music</button>
+      <button onclick="loadData(1003)" class="nav-btn">Comedy</button>
+      <button class="nav-btn" id="empty">Drawing</button>
+    </div>
+    <div class="cardsContainer"></div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

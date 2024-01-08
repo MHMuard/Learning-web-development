@@ -1,0 +1,42 @@
+extension need for web development. 
+1. Live server 
+2. dracula official 
+3. auto close tag
+4. Auto rename tag
+5. HTML snippet
+6. Css Peek 
+7. HTML Css support 
+8. Tailwind CSS intellisense
+9. Better comment 
+10. Bosstrap 4, font awsome
+11. CodeSnap
+12. Color picker 
+13. JavaScript(ES6)  Code snippet
+14. IntelliSense for CSS Class Names in HTML
+15. Material Icon theme 
+16. Peacock
+17. Prettier- Code formatter
+18. Spell Right 
+19. Tabnine AI Autocomplete & Chat for Js
+20. Turbo Console Log
+21. Simple react snippet 
+
+1-3 HTML TAG
+<h1> to <h6> Heading tag
+<p> paragraph tag
+<div> division tag use for create differet section in code understanding 
+<section> like as a div tag
+<!--Comment --> or short cut ctrl+/.
+
+<button>Button name</Button>
+<a href="url"> click here</a>
+target="_blank" this is mean hyperlink are open in new windows.
+<img src="url" alt="here write something about image"/>
+<mark> </mark>
+list tag
+table tag
+
+
+
+
+

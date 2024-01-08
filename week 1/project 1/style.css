@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.nev-container{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d7077;
+}
+.logo{
+    width: 100px;
+}
+.manu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 22px;
+}
+.doctors-img{
+    max-width: 100%;
+    max-height: 500px;
+}
+.banner-container
+{
+    display:flex;
+    margin: auto;
+    width : 80%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    font-size: 66px;
+    font-weight: bold;
+    color: #00ca9a;
+    text-align: center;
+}
+.description
+{
+    font-size: 22px;
+}
+button{
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.app-btn{
+    background-color:#00ca9a;
+}
+.dct-btn{
+    background-color: #0D7B77; 
+}
+.service-card{
+    width: 300px;
+    height: 350px;
+    box-shadow: 8px 8px 16px gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.service-img{
+    width: 150px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-container{
+    text-align: center;
+
+}
+
+.input-box{
+    padding: 15px 30px;
+    margin: 10px;
+}
+
+.text-area{
+    padding: 35px 50px;
+}
+.submit-btn{
+    padding: 10px 20px;
+    width: 35%;
+    margin-top: 20px;
+    color: white;
+    background-color: #00ca9a;
+    border: none;
+    font-size: 22px;
+}
+.footer-container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #00ca9a;
+    margin-top: 20px;
+    gap: 10px;
+}
+.footer-des{
+    padding:20px;
+    width: 20%;
+}
+.footer-use{
+    list-style: none;
+}
+li{
+    margin-bottom: 15px;
+}
+.footer-support{
+    list-style: none;
+}
+

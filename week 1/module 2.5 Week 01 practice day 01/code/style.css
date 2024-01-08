@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.header-container{
+    background: linear-gradient(135deg, #040641 10.47%, #3F0753 98.32%);
+    width: auto;
+    height: 880px;
+}
+.nav-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav-img{
+    margin-top: 34px;
+    margin-left: 116px;
+    width: 420px;
+    height: 57px;
+}
+.nav-menu{
+    margin-top: 30px;
+    margin-left: 36px;
+    color: white;
+    list-style: none;
+    display: flex;
+    width: 588px;
+    justify-content: space-around;
+}
+.nav-btn{
+    margin-top: 37px;
+    background-color: transparent;
+    color: white;
+    width: 138;
+    height: 48;
+    padding: 18px 35px 16px 35px;
+    border-radius: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.2957);
+    color: #FFF;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+}
+
+.section-left{
+    margin-left: 135px;
+    margin-top: 139px;
+    width: 470px;
+
+}
+.sec-p-1{
+    color: var(--Text_Light_Accent, #EF6D58);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.section-left-h1{
+    color: var(--Text_Light, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px; /* 111.111% */
+    letter-spacing: -2px;
+}
+.sec-p-2{
+    color: var(--Text_Light_Gray, rgba(255, 255, 255, 0.64));
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text */
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+}
+.sec-btn-abt{
+    width: 154px;
+    height: 48px;
+    border-radius: 6px;
+    background: #EF6D58;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sec-btn-con{
+    color: white;
+    background-color: transparent;
+    border:none;
+    width: 86px;
+    height: 32px;
+    margin-left: 46px;
+    color: var(--Text_Light, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+}
+
+/* right section */
+.section-right{
+    width: 617px;
+    height: 648px;
+    margin-top: 73px;
+    align-items: center;
+}
+
+.sec-img{
+    height: 572px;
+}
+.section-left-icon{
+    width: 617px;
+    align-items: center;
+    margin-left: 194px;
+}
+
+.expertise-content{
+    width: 100%;
+    align-content: center;
+    height: 250px;
+    
+}
+
+.exper-head{
+    margin-top: 50px;
+    color: var(--Text_Dark, #391400);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.exper-icon{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:80px;
+    height: 30px;
+}
+.exper-icon-img{
+    height: 45px;
+}
+.nextjs{
+    margin-top: 22px;
+    width: 80px;
+    height: 17px;
+}
+
+.exp-content{
+    background: linear-gradient(135deg, #040641 10.47%, #3F0753 98.32%);
+    width: auto;
+    height: 880px;
+    display: flex;
+    justify-content: center;
+}
+
+.exp-number{
+    color: var(--Gray-6, #F2F2F2);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom:-17px;
+    line-height: 48px; /* 120% */
+}
+
+.exp-text{
+    color: var(--Gray-6, #F2F2F2);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 50;
+    line-height: 32px; /* 160% */
+}

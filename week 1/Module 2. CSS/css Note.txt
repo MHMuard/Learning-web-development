@@ -1,0 +1,42 @@
+css 
+
+Inline CSS.
+Internal or Embedded CSS.
+External CSS.
+
+css can access class by 
+".class_value{
+css property
+}"
+css can access ID by 
+"#ID_name{
+css property
+}"
+css can access Tab by 
+tag_name{
+css property
+} 
+
+power of ID> Class> Tag_name
+
+Css link with HTML ty a tag
+"<link rel="stylesheet" href="css_file_name">
+
+2-3 css typrography and colors and google font:
+{
+	color: red;
+	font-weight: 60px;
+	font-style: italic;
+	text-align: left;
+	font have many property
+}
+
+
+google font search on google. after slect the font have two option link and import. both can use. 
+this link are paste in the below of the "<link rel="stylesheet" href="css_file_name">.
+after that we fine a text "css rules to specify familes" in the below of the google font link. that can use in css file for use this font specific tag.
+also can use the import. which is need to paste in the top of the css file. and also need to use "css rules to specify familes".
+
+fontawsome cdn
+display inline block and inline block _ float-1
+float property

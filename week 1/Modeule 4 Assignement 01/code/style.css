@@ -1,0 +1,511 @@
+/* body{
+    margin: 0px;
+    padding: 0px;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+  
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 75%;
+}
+  
+.input-group.w-25 {
+    width: auto; 
+}
+
+.src_inpt{
+    width: 100%;
+    height: 40px;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 16px;
+}
+.nav_extra{
+
+    padding: 16px 160px 16px 198px;
+    gap: 23px;
+    background-color: #1A187A;
+}
+
+.nav-t{
+    color: white;
+    text-decoration-color: white;
+}
+
+.banner-bg{
+    background: url("/resources/bg\ img.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    background-size: cover;
+}
+
+@media (max-width: 768px){
+    /* Center the content vertically and horizontally */
+
+    .custom-carousel {
+    max-height: 100%;
+    }
+
+    .banner-first-image{
+    margin: -20% 0 0 0;
+}
+}
+
+.nav-icon{
+    display: flex;
+    gap: 24px;
+}
+
+/* banner section */
+.b-text{
+    
+    align-items: center;
+}
+.b-h3{
+    color: #1E046A;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 128% */
+}
+.b-iphone{
+    color: black; 
+    font-size: 96px; 
+    font-family: Montserrat; 
+    font-weight: 400; 
+    line-height: 72px; 
+    word-wrap: break-word"
+}
+.b-14_pro{
+    color: black; 
+    font-size: 96px; 
+    font-family: Montserrat; 
+    font-weight: 600; 
+    line-height: 72px; 
+    word-wrap: break-word
+}
+
+.b-btn{
+    width: 200px; 
+    height: 56px; 
+    padding-left: 56px; 
+    padding-right: 56px; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    background: #171495; 
+    border-radius: 6px; 
+    border: 1px white solid; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+    display: inline-flex
+}
+
+.b-btn-child{
+    text-align: center; 
+    color: white; 
+    font-size: 16px; 
+    font-family: Montserrat; 
+    font-weight: 900; 
+    line-height: 24px; 
+    word-wrap: break-word
+}
+
+
+.iphone-image{
+    padding-top: 200px;
+    width: 406px;
+    height: 998px;
+}
+
+.ipad{
+    display: flex;
+    height: 328px;
+    width: 100%;
+    padding: 0px 48px 0px 334px;
+    margin: 0px;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+    background: var(--main-white, #FFF);
+    overflow: hidden;
+}
+.ipad-img-p{
+    display: flex;
+    height: 328px;
+    padding: 0px 48px 0px 334px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    position: relative;
+}
+.ipad-img-c {
+    position: absolute;
+    left: -80px;
+    bottom: -35px;
+
+}
+.ipad-img{
+    width: 513px;
+    height: 343px;    
+}
+
+.ipad-text{
+    margin-left: 350px;
+    
+}
+.ipad-airpod{
+    position: relative;
+}
+.airpad-div{
+    display: flex;
+    height: 272px;
+    width: 95%;
+    padding: 0px 48px 0px 156px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.airpod-img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -141px;
+    
+}
+
+.airpod-txt{
+    margin-left: 350px;
+}
+.main-product-div{
+    position: relative;
+}
+
+.macbook-div{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    padding: 44px 264px 44px 56px;
+    align-items: center;
+    gap: 1px;
+    flex-shrink: 0;
+    background: #EDEDED;
+    position: relative;
+}
+
+.macbook-img{
+    position: absolute;
+    left: 500px;
+}
+.macbook-txt{
+    
+    margin-right: 220px;
+}
+
+.browser-div{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+
+.product{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.airpod{
+background-color: rgb(173, 194, 215);
+}
+
+
+.macbook{
+background-color: #EDEDED;
+}
+.ipad-txt{
+    color: #909090;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    align-self: stretch;
+}
+
+.btn-mac{
+    display: flex;
+    padding: 16px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    background: #27448E;
+}
+.mac-img-div{
+    position: relative;
+    /* position: absolute; */
+    right: -300px;
+    top: 49px;
+}
+.mac-img{
+    display: flex;
+    width: 650px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.Headphones{
+    display: flex;
+    height: 272px;
+    width: 100%;
+    padding: 0px 48px 0px 156px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    background: #ADC2D7;
+
+}
+
+/* .ipad-img-c{
+    overflow: hidden;
+} */
+.brw-icon-parent{
+    
+    gap: 32px;
+}
+.brw-icon{
+    display: flex;
+    border: 1px solid;
+    width: 160px;
+    height: 128px;
+    min-width: 135px;
+    padding: 24px 52px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 15px;
+    background: #EDEDED;
+}
+
+.custom-navbar {
+    background-color: rgb(26, 24, 122) !important;
+    color: white;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 75%;
+  }
+  
+  /* Adjust the width of the search box to fit the content */
+  .input-group.w-25 {
+    width: auto; /* Or adjust the width as needed */
+  }
+  
+  .custom-carousel {
+    background: linear-gradient(140deg, pink, white, rgb(63, 63, 201));
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  
+  
+  .col-sm-6 .card img{
+    width: 150px;
+  }
+  
+  .carousel-img {
+    height: 80%;
+  }
+  
+  /* mediaquery for all code responsive */
+  
+  @media (max-width: 768px) {
+    /* Center the content vertically and horizontally */
+  
+    .custom-carousel {
+      max-height: 100%;
+    }
+  
+    .banner-first-image{
+      margin: -20% 0 0 0;
+  }
+  
+  /* .cat-item-img{
+    height: 100px;
+  } */
+  
+  
+  }
+  
+  
+  .icon-item{
+    background-color: rgb(223, 221, 221);
+    border-radius: 10px;
+    width: 7rem;
+    padding-top: 1%;
+  }
+  
+  .iphone-custom{
+    padding-top: 35%;
+  }
+  
+  
+  
+  /* product part */
+  .product{
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .airpod{
+    background-color: rgb(173, 194, 215);
+  }
+  
+  .ipad{
+    width: 400px;height: 300px;
+  }
+  
+  .macbook{
+    background-color: #EDEDED;
+  }
+  
+  
+  
+  
+  .banner-part-2{
+    background-color: rgb(149, 138, 212);
+  }
+  
+  .banner-first-image{
+      padding: 0;
+      margin: 30% 0 0 -50%;
+  }
+  
+  .sale-count{
+    color: rgb(37, 23, 123);
+  }
+  
+  
+
+.product-sec{
+    padding-top: 56px;
+}
+  
+.all-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 18%;
+    padding-bottom: 56px;
+
+}
+.all-card-c{
+    gap: 16px;
+}
+
+.ipad2{
+    width: 570px;
+    height: 357px;
+    flex-shrink: 0;
+}
+.love-icon{
+    /* display: flex; */
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-part{
+    background-color: rgb(14, 7, 27);
+    color: white;
+  }
+  
+  .footer-content{
+    max-width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media  screen and (max-width: 600px) {
+    .ipad-img{
+        width: 380px;
+        height: 341px;
+        position: relative;
+        left: 25px;  
+        padding-top: 20px;  
+    }
+    .ipad-text{
+        position: relative;
+        left: -130px;
+
+    }
+    .ipad-text{
+        margin-left: 400px;
+        padding: 60px;
+        height: 300px;
+        
+        
+    }
+    .ipad-text-p{
+        text-align: start;
+    }
+    .airpod-img{
+        width: 400px;
+        height: 400px;
+    }
+    .airpod-txt{
+        margin-left: 300px;
+    }
+    .main-product-div{
+        position: relative;
+    }
+    
+    .macbook-div{
+        position: relative;
+        margin-top: 300px;
+        margin-bottom: 300px;
+    }
+    
+    .macbook-img{
+        width: 80%;
+        height: 50%;
+        position: absolute;
+        left: 400px;
+        top: -30px;
+    }
+    .macbook-txt{
+        margin-top: -350px;
+        margin-right: 200px;
+        padding: 20px;
+
+    }
+}
