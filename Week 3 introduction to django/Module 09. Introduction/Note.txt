@@ -1,0 +1,101 @@
+virtual environment 
+step 01: Installing virtual environment
+	already installed while install python 
+	if not install the enviroment then install by command
+	$ pip install pipenv
+step 02: Test your installation:
+	$ pipenv --version
+step 03: Naming Virtual Env:
+	$ python -m venv name_of_VE
+step 04: Activating Virtual Env:
+	$ name_of_VE\scripts\activate.bat
+step 05: Deactivating virtual Env:
+	$ deactivate
+
+django 
+install:
+$ pip install django 
+check version:
+$ django-admin --version
+to show the list of python package:
+$ pip list
+if need to another version install:
+$ pip install django==version
+
+Start a Project of django:
+$ django-admin startproject name_of_project
+
+start a app:
+$ django-admin startapp name_of_app
+
+to run the project manage.py command:
+$ python manage.py runserver
+after run this code show some details and give a server link we can check from the link the django are run successfully or not.
+Starting development server at http://127.0.0.1:8000/
+server link: http://127.0.0.1:8000/
+
+django project folder structure:
+__init__.py: the folder which contain __init__.py file is considerd as python package.
+wsgi.py: WSGI(Web server Gateway Interface) is a specification that describes how a web server communicates with web applications, synchronous.
+asgi.py: Asynchronous server gateway interface. ASGI provides standard for both asynchronous and synchronous
+setting.py: this file contains all the information or data about project setting. E.g:- Database config information, Templete, installed application, validation etc.
+urls.py: contain information or url attached with application 
+manage.py: manage.py is a project specific command-line utility
+
+root directory/outter project directory- main project folder is a root directory. 
+inner project folder-the folder which have inside the root folder and same name.
+app- app is a small fuction of a project
+
+
+Working with urls and views:
+if we want to add a page. then need create a fucntion on view.py and add url in urls.py
+http://127.0.0.1:8000/contacts want to add this page 
+add urls :
+	urlpatterns = [
+		path('admin/', admin.site.urls)
+		path('contacts/', views.contacts)
+		]
+also need import views. 
+	import .views
+
+add fuction in views:
+	from django.http import HttpResponse
+	def contact(resquest):
+		return HttpResponse("This is contact page")
+
+working with app:
+create app:
+$ django-admin startapp app_name
+
+in the app section cant found the urls.py. we need to create this file.
+in the urls.py need to write code 
+
+	from django.urls import path
+	from . import views
+
+	urlpatterns = [
+    		path('course', views.course)
+	]
+in view section need to add fucntion.
+
+and after create app need to notifiy in main projcet section's settting. into install app.
+"first_app",
+
+and aslo add the first_app.urls into the main project section urls.py
+code: 
+	from django.urls import path, include
+	urlpatterns=[
+		path('app_name', include("app_name.urls")),
+	]
+
+
+
+
+
+
+
+
+
+
+	
+

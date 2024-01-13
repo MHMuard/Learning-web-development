@@ -1,0 +1,45 @@
+Working with django tamplate
+
+when we request for show something in web site then views get a request and give a html file as a response.
+
+learn use of for , condition, filter in template.
+
+how to render templates globally
+after create a project and app. also setup this. if we want to render a templates.
+we can do this rendering by 2 ways
+1. globally 
+2. locally (inside the app folder)
+
+globally:
+	step 1:
+		create a tamplates folder then put all the html and relavent folder in it.
+	step 2:
+		write the name of the folder inside the settings file in tamplate. As a 'DIRS': ["tamplates",],
+
+	step 3:
+		create a function inside the view and render the html file 
+	from django.shortcuts import render
+
+	# Create your views here.
+		def home(request):
+    			return render(request, "index.html")
+
+
+locally (inside the app folder)
+
+	step 1:
+		create a tamplates folder then put all the html and relavent folder in it.
+	step 2:
+		create also a folder name is the match with the app name.
+
+	step 3:
+		create a function inside the view and render the html file.
+		from django.shortcuts import render
+
+			Z# Create your views here.
+		def home(request):
+    			return render(request, "first_app/home.html")
+
+
+simple page navigation:
+
