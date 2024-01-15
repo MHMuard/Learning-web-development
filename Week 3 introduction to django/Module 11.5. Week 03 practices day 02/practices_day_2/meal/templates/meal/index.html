@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
+
+<h1 style='text-align: center' class='bg-denger'>meal page</h1>
+{% for meal in meals %}
+    <div class='d-flex flex-wrap m-auto'>
+        <div class="card m-auto" style="width: 300px;">
+            <img src="{{ meal.strMealThumb }}" style="width: 300px;" class="card-img-top" alt="{{ meal.strMeal }}">
+            <div class="card-body">
+            <h5 class="card-title">{{ meal.strMeal }}</h5>
+            <p class="card-text">ID: {{ meal.idMeal }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

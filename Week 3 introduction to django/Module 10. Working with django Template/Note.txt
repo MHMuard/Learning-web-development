@@ -36,10 +36,102 @@ locally (inside the app folder)
 		create a function inside the view and render the html file.
 		from django.shortcuts import render
 
-			Z# Create your views here.
+			# Create your views here.
 		def home(request):
     			return render(request, "first_app/home.html")
 
 
 simple page navigation:
+1. start project and app
 
+2. create views.py inside project file -- "improt . views" inside urls.py -- write some function inside the views. set urls of the functions which create inside the views.
+
+3. create urls.py inside the app file.--improt . views inside urls.py -- write some function inside the views. set urls of the functions which create inside the views.such as "path("about/",views.about)
+
+4. define the app urls inside the project urls.
+
+5. after complete this create templates folder. 2 way. 
+	1. inside the outer project folder/root directory. this called globally define
+	2. inside the app folder.
+6.
+after setup the view url and app setting.
+
+set the urls like this. befor the link need to add / in html hyperlink 
+    <a href="/"> Home </a>
+    <a href="/navigation/content/">content</a>
+    <a href="/navigation/about/">about</a>
+
+How to use context in django 
+If we send any data from backend i.e. views.py into any html of our template folder then we call that data as context.
+Context normally works in dictionary format i.e. the data should be sent to us in key value pairs.
+such as d = {'author' : 'Rahim', 'age' : 5}
+
+pass a context by a function in to render html. from views.py
+
+example code.
+def home(home)
+	d = {'author': 'rahim', 'age': 5}
+	return render(request, 'home.html',d) #here pass the dictionary name d.
+d can pass by "context = d or d"
+
+Now this data can only be accessed by this home.html and no one else can.
+To access these values ​​we use {{}} double curly brackets. Now in home.html if I want to print the author, age of this dictionary then I will code as below.
+    <h1>This is home page</h1>
+    <h2>Author : {{author}}</h2>
+    <h2>Age : {{age}}</h2>
+i can pass any data from backend but it must be dictornay format.
+
+
+
+django tamplete language
+
+conditional statement use in html file
+
+{% if condition %}
+	statement
+{% elif condition %}
+	statement
+{%else %}
+	statement
+{% endif %}
+
+example
+    {% if age >= 18 %}
+        <p>You will get a driving license.</p>
+    {% elif age >= 10 and age <= 17 %}
+        <p>You will not get a driving license.</p>
+    {% else %}
+        <p>You are a child.</p>
+    {% endif %}
+
+loop use in html file
+<!-- for loop -->
+    {% for i in course %}    
+	<h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
+    {% endfor %}
+
+ 
+
+django template filtering 
+Filtering means that a word of the context data in the template will be upper case, lower case or check the length of the word or list or dictionary or work with date etc.
+
+// Syntax for writing filtering code 
+{{ variable_name | filter_name }}
+
+Example 1: We want to join the values ​​of our context data lst and there will be - between them. Join means to convert string from list to string only.
+<h1>{{ lst | join:" - " }}</h1>
+output : 
+python - is - best
+
+here lst=["python", "is", "best"]
+
+Example 02: Suppose today is our Rahim's birthday, the birthday data is coming from the backend in the form of objects, we want to bring it to our human readable format, we can do it as below.
+
+<h1>{{ birthday | date:"D d M Y" }}</h1>
+
+output : 
+Thu 23 Nov 2023
+
+
+
+project_3 for practiceing use of context and template language

@@ -87,7 +87,38 @@ code:
 	urlpatterns=[
 		path('app_name', include("app_name.urls")),
 	]
+What is git
+Why git is used
+What is github
+Git vs github
+git is a version control system or tool used for tracking changes in computer files. It's tool developers install locally on their desktop or laptop. It is generally used for sourse code management in software development.
 
+Why should we use git
+1. Tracking changes to source code
+2. Multiple developers can work together 
+3. Track history 
+4. Creates backup
+
+Github
+Github is a code hosting platform or version control and collaboration. it let's you and other work together on project from anywhere.
+
+Git vs github
+Git is a version control system and lets your manage and keep track of your source code history.
+Github is a cloud-based hosting service that lets you manage git repositories 
+
+working with github. 
+after create a represatory connect with local directory by bellow code.
+git init
+git add .
+git commit -m "First commit"
+git branch -M main
+git remote add origin github_represatory_link
+git push -u origin main
+
+after completely done this. again need to update the change. Update the change by the code 
+git add . 
+git commit -m "something comment which remain you which change are do in the project"
+git push
 
 
 

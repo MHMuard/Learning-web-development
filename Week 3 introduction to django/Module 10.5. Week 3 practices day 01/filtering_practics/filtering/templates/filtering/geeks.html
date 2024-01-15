@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Django Filtering in geeksforgeeks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, geeks</h1>
+    <a href='/'>Home</a>
+    <a href='/filtering/earthly/'>Earthly</a>
+    <a href='/filtering/geeks/'>Geeks</a>
+    <br>
+    <pre>
+        Django Template Filters
+        Syntax:
+            { { variable_name | filter_name } }
+    </pre>
+    <pre>
+        <span style='color:red'>length filter</span>
+        { { variable_name | length } }
+        <p>length of {{list}} is {{list|length}}</p>
+    </pre>
+    <pre>
+        <span style='color:red'>add filter</span>
+        { { variable_name | add:"2" } }
+        <p>befor filter val={{val}} after filter val={{val|add:"2"}}</p>
+    </pre>
+    <pre>
+        <span style='color:red'>addslashes filter</span>
+        <span>It is used to add slashes before quotes.</span>
+        { { value | addslashes } }
+        <p>befor filter value={{addslash}} after filter value={{addslash|addslashes}}</p>
+    </pre>
+    <pre>
+        <span style='color:red'>capfirst filter</span>
+        <span>It is used to capitalize the first character of the value.</span>
+        { { value | capfirst } }
+        <p>befor filter value={{cap}} after filter value={{cap|capfirst}}</p>
+    </pre>
+    <pre>
+        <span style='color:red'>center filter</span>
+        { { value | center:'15' } }
+        <p>befor filter value={{cap}} after filter value={{cap|center:'15'}}</p>
+    </pre>
+    <pre>
+        <span style='color:red'>cut filter</span>
+        { { value | cut:" " } }
+        <p>befor filter value="{{c}}" after filter value="{{c|cut:" "}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>default filter</span>
+        { { value | default:"nothing" } }
+        <p>befor filter value="{{d}}" after filter value="{{d|default:"nothing"}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>dictsort filter</span>
+        { { value | dictsort:"name" } }
+        <p class='d-flex flex-wrap'>befor filter value="{{di}}" after filter value="{{di | dictsort:"name"}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>divisibleby filter</span>
+        { { value | divisibleby:"3" } }
+        <p>befor filter value="{{21}}" after filter value="{{ 21 | divisibleby:"3"}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>filesizeformat filter</span>
+        { { value | filesizeformat } }
+        <p>befor filter value="{{123456789}}" after filter value="{{ 123456789 | filesizeformat}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>first filter</span>
+        { { value | first } }
+        <p>befor filter value="{{list}}" after filter value="{{ list | first}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>last filter</span>
+        { { value | last } }
+        <p>befor filter value="{{list}}" after filter value="{{ list | last }}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>length filter</span>
+        { { value | length } }
+        <p>befor filter value="{{list}}" after filter value="{{ list | length}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>lower filter</span>
+        { { value | lower } }
+        <p>befor filter value="{{l}}" after filter value="{{ l | lower}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>make_list filter</span>
+        { { value | make_list } }
+        <p>befor filter value="{{l}}" after filter value="{{ l | make_list}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>random filter</span>
+        { { value | random } }
+        <p>befor filter value="{{l}}" after filter value="{{ l | random}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>slugify filter</span>
+        { { value | slugify } }
+        <p>befor filter value="{{s}}" after filter value="{{ s | slugify}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>title filter</span>
+        { { value | title } }
+        <p>befor filter value="{{s}}" after filter value="{{ s | title}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>upper filter</span>
+        { { value | upper } }
+        <p>befor filter value="{{s}}" after filter value="{{ s | upper}}"</p>
+    </pre>
+    <pre>
+        <span style='color:red'>wordcount filter</span>
+        { { value | wordcount } }
+        <p>befor filter value="{{s}}" after filter value="{{ s | wordcount}}"</p>
+    </pre>
+
+    
+    <h1>{{'Happy coding. Python is fun.' | truncatewords:2}}</h1>
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
