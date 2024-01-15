@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
+
+{% for meal in categories %}
+<div class="card m-auto" style="width: 300px;">
+    <img src="{{ meal.strCategoryThumb }}" class="card-img-top" alt="{{ meal.strCategory }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ meal.strCategory }}</h5>
+        <p id="shortDesc_{{ forloop.counter }}" class="short-description card-text">{{ meal.strCategoryDescription|truncatewords:10 }}</p>
+        <p id="fullDesc_{{ forloop.counter }}" class="full-description card-text" style="display: none;">{{ meal.strCategoryDescription }}</p>
+        <button class="btn btn-primary toggle-description" onclick="toggleDescription(this, {{ forloop.counter }})">Details</button>
+    </div>
+</div>
+{% endfor %}
+
+<script src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}

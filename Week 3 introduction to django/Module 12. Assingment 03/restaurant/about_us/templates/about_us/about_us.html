@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
+    <header>
+        <h1>About Delightful Bites</h1>
+    </header>
+    <main>
+        <section class="about-content">
+            <div class="image-container">
+                <img src="{% static './image/Restaurant_63cbb3b0bacce.jpg' %}" alt="Restaurant Image">
+            </div>
+            <div class="text-content">
+                <p class='p'>Welcome to DelightfulBites, where culinary excellence meets a delightful dining experience.</p>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
