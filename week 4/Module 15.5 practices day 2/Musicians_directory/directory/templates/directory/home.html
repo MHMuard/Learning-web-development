@@ -33,6 +33,8 @@
                     <td colspan="4" style="border: 1px solid black;">No Album Found</td>
                     <td style="border: 1px solid black;">
                         <a href="{% url 'album_edit' %}?musician_id={{ musician.id }}">Add Album</a>
+                        <br>
+                        <a href="{% url 'musician_delete' musician.id %}" onclick="return confirm('Are you sure you want to delete this musician?');">Delete Musician</a>
                     </td>
                 {% endif %}
             </tr>
